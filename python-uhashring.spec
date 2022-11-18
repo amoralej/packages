@@ -11,8 +11,6 @@ Source:         https://github.com/ultrabug/%{module}/archive/refs/tags/%{versio
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
-BuildRequires:  git-core
-BuildRequires:  pyproject-rpm-macros
 
 %global _description %{expand:
 uhashring implements consistent hashing in pure Python.}
@@ -26,7 +24,7 @@ Summary:        %{summary}
 %_description
 
 %prep
-%autosetup -p1 -n %{module}-%{version} -S git
+%autosetup -p1 -n %{module}-%{version}
 
 %generate_buildrequires
 %pyproject_buildrequires -t
@@ -47,6 +45,6 @@ Summary:        %{summary}
 %license LICENSE
 
 %changelog
-* Fri Nov 18 2022 Alfredo Moralejo <amoralej@redhat.com> 2.1-1
+* Fri Nov 18 2022 Alfredo Moralejo <amoralej@redhat.com> - 2.1-1
 - Initial build with version 2.1 
 

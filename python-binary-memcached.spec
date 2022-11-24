@@ -16,7 +16,7 @@ BuildRequires:  python3-devel
 BuildRequires:  pyproject-rpm-macros
 BuildRequires:  python3-m2r
 BuildRequires:  python3-flake8
-BuildRequires:  python3-mistune
+BuildRequires:  python3dist(mistune)
 BuildRequires:  python3-pytest
 BuildRequires:  python3-trustme
 BuildRequires:  python3-pip
